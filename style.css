@@ -18,12 +18,12 @@ body {
     /*padding: 1em;*/
 }
 
-#container a {
+a {
     text-decoration:none;
     color: var(--pale);
 }
 
-#container a:hover {
+a:hover {
     text-decoration:none;
     color: var(--brown);
     background-color: var(--paler);
