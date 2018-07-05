@@ -94,26 +94,26 @@ img.portrait {
 
 }
 
-#container {
+#journal {
     text-align:center;
 }
 
-#container .entries {
+#journal div.entries {
     text-align:left;
     display:inline-block;
     width: 800px;
 }
 
-#container h1 {
+#journal h1 {
     font-family: 'Merriweather', serif;
 }
 
-#container h2 {
+#journal h2 {
     font-size: 1.2em;
     color: var(--paler);
 }
 
-#container img {
+#journal img {
     text-align: center;
     max-height: 500px;
 }
