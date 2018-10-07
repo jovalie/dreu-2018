@@ -49,7 +49,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius elit non consectetur varius. Maecenas in lectus nec lorem faucibus tempus. Proin at quam eget massa dapibus sodales id interdum erat. Integer dui tortor, iaculis sit amet porta eget, consectetur efficitur dui. Nam pretium lectus pulvinar lectus placerat, sed finibus metus egestas. Maecenas ultrices sagittis orci placerat interdum. Nunc pretium eget justo vitae euismod.
             </p>
 
-            <h1>Week 6/10: technical difficulties</h1>
+            <h1>Week 6/10: more technical difficulties</h1>
             <h2>Friday, July 13, 2018</h2>
     
             <p>
@@ -69,11 +69,11 @@
             
             <hr>
             
-            <h1>Week 5/10: Title</h1>
+            <h1>Week 5/10: databases ? ?</h1>
             <h2>Friday, July 6, 2018</h2>
     
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius elit non consectetur varius. Maecenas in lectus nec lorem faucibus tempus. Proin at quam eget massa dapibus sodales id interdum erat. Integer dui tortor, iaculis sit amet porta eget, consectetur efficitur dui. Nam pretium lectus pulvinar lectus placerat, sed finibus metus egestas. Maecenas ultrices sagittis orci placerat interdum. Nunc pretium eget justo vitae euismod.
+                So it turns out that REST and SOAP APIs are not that scary, and actually quite easy to use if you have the right Python modules. (Thank you, requests.) The difficult part is integrating the data into PyDial. PyDial does have an Ontology module that can be accessed from a global scale, however, all of the data in the ontology must be present in order to be accessed by the previous modules -- so I can't use API calls while the chatbot is mid-conversation. I could download all of RxNorm's data and create an ontology out of it, however, that dataset would be really huge -- the RxNorm dataset contains information on every single medication that is currently avaliable in the United States. If I were to have RxNorm make API calls on an as-needed basis, I would have to change the architecture of each module that's currently in PyDial... I am still having trouble understanding the research behind the natural language processing of PyDial, so I don't think that is a feasible goal....
             </p>
             
             <hr>
@@ -82,8 +82,18 @@
             <h2>Friday, June 29, 2018</h2>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius elit non consectetur varius. Maecenas in lectus nec lorem faucibus tempus. Proin at quam eget massa dapibus sodales id interdum erat. Integer dui tortor, iaculis sit amet porta eget, consectetur efficitur dui. Nam pretium lectus pulvinar lectus placerat, sed finibus metus egestas. Maecenas ultrices sagittis orci placerat interdum. Nunc pretium eget justo vitae euismod.
+                I've been struggling a lot with understanding the research behind PyDial. This is the first time I've worked with statistical research of any kind, and to be honest, I feel like statistics is not my strong suit! Furthermore, I'm struggling with understanding how to use RxNorm, the dataset from the U.S. Library of Medicine that is to be used as a part of the knowledge database of the chatbot. I don't have any pharmacutical knowledge and have never worked with a database of this size & scope before. Furthermore, I wasn't familiar with the web technologies (SOAP API? REST API?) that RxNorm used.
             </p>
+
+            <p>
+                However, I'm really determined to not let all of this let me down! I knew starting the project that the learning curve would be really steep.
+            </p>
+
+            <p>
+                I'm very shy, and I feel like one of my weaknesses is being too shy to ask for help -- however, at least now that I'm aware of it, I can work to overcome that. Normally, if I'm confused on a problem, I scour the internet for resources that can help me understand what I'm struggling with. However, that is usually a very time-consuming process. So this time, I asked one of my advisors to meet up and help me understand the medical terminology behind RxNorm -- he was actually really happy to answer my questions! I thanked him for helping me out and he thanked me for working with me!
+            </p>
+
+            <p>It feels really good to be appreciated!</p>
             
             <hr>
             
@@ -108,11 +118,15 @@
             <h2>Friday, June 15, 2018</h2>
 
             <p>
-                One of my advisors recommended that we use PyDial, a framework for creating spoken dialogue systems created by the University of Cambridge. However, he wasn't able to get the test dialogue up and running on his system. My first task is to do this, of course.
+                One of my advisors recommended that we use PyDial, a framework for creating spoken dialogue systems created by the University of Cambridge. However, he wasn't able to get the demo configuration up and running on his system. My first task is to do this, of course.
             </p>
 
             <p>
                 The documentation for the PyDial system is not up to production standards, which is reasonable given the fact that this was designed to be used by a specific research team. (I'm happy enough that they are sharing this code with us!) Much of this week was spent studying how Python packages are structured and fixing issues with Python modules that PyDial was dependent on that were no longer compatible with Python 2.7.
+            </p>
+
+            <p>
+                I did get the PyDial demo running! I didn't realize it at first, because the system's response to one of my requests ("I want a cheap hotel in the centre of town.") started off with ("I am sorry but there is no place") which didn't seem right... I spent an hour trying to debug that before I realized that it was actually the correct answer. I laughed a lot with the people in my lab.
             </p>
 
             <p>
